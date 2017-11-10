@@ -31,7 +31,8 @@ export class CustomListComponent implements OnInit {
   onContentReadyHandler(e) {
     // Selects the first visible row
     e.component.selectRowsByIndexes([0]);
-    e.component.selectRowByVisibleIndex([0]);
+    
+    //e.component.selectRowByVisibleIndex([0]);
 
   }
 
@@ -112,8 +113,7 @@ export class CustomListComponent implements OnInit {
   //--------------------------------------End Arrow up down code-------------------------
   ngAfterViewInit() {
     document.getElementById('gridContainer').click();
-    //this.dataGrid.instance.selectRowsByIndexes([0]);
-  }
+    }
 
 
   private clickOKBtn() {
