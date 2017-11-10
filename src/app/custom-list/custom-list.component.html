@@ -1,0 +1,19 @@
+<div class="listitems" [style.width.%]="listwidth">
+  <dx-data-grid #selectedvalue id="gridContainer" 
+  [dataSource]="menucaption" [showBorders]="true" 
+  (onRowClick)="selectedListItem()"
+    [selection]='{mode: "single",allowSelectAll: false}' 
+    (onContentReady)="onContentReadyHandler($event)" [columnAutoWidth]="true">
+    <dxo-load-panel [enabled]="false"></dxo-load-panel>
+    <dxo-scrolling mode="virtual"></dxo-scrolling>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+  </dx-data-grid>
+  <footer>
+    <div style="display: flex;">
+      <button class="button" (click)="clickOKBtn()">Ok</button>
+      <button class="button" (click)="clickKBBtn()">KB</button>
+      <button class="button" (click)="clickExitBtn()">Exit</button>
+    </div>
+  </footer>
+</div>

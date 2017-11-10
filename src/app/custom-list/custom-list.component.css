@@ -1,0 +1,35 @@
+.listitems{  
+    z-index: 1;
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    top: 90px;
+    background-color: #f8f6ea;
+    padding: 2px;
+      }
+#gridContainer {
+    height:calc(100% - 49px);
+     /* background-color: #FFFCDF; */
+    }
+.button {
+    background-color: rgb(255, 241, 168);
+    border: none;
+    color: black;
+    height:48px;
+    width:34%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+#employeeInfo .employeeNotes {
+    padding-top: 20px;
+    text-align: justify;
+}
+.dx-widget{
+    line-height: 10px;
+    }
+/* ------------------------------------ */
